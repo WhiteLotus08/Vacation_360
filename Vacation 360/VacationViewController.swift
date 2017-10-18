@@ -34,6 +34,8 @@ class VacationViewController: UIViewController {
     override func viewDidLoad() {
     super.viewDidLoad()
         imageURLView.load(UIImage(named:Media.photoArray.first!), of: GVRPanoramaImageType.mono)
+        imageURLView.enableCardboardButton=true
+        imageURLView.enableFullscreenButton=true
         
    //     videoVRView.load(from: URL(string:Media.videoURL))
   }
